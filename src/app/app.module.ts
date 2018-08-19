@@ -5,12 +5,14 @@ import {HttpClientModule} from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { LandingpageComponent } from './landingpage/landingpage.component';
 import { SearchformComponent } from './searchform/searchform.component';
+import { LastloginPipe } from './lastlogin.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingpageComponent,
-    SearchformComponent
+    SearchformComponent,
+    LastloginPipe
   ],
   imports: [
     BrowserModule,
