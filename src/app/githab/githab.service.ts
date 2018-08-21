@@ -1,14 +1,14 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-//import {GithabService} from '../githab/githab.service.spec';
+import {User} from '../user';
 
 @Injectable({
   providedIn: 'root'
 })
 export class GithabService {
-  githabService = GithabService;
+  githabService = User;
 
   constructor(private http:HttpClient) {
-    //this.githabService = new GithabService ("","","","");
+    this.githabService = new GithabService ("","","","");
    }
 }
