@@ -17,7 +17,7 @@ export class LandingpageComponent implements OnInit {
    }
 
   ngOnInit() {
-    this.githabService = this._serviceme();
+    //this.githabService = this._serviceme();
   }
 
 }
