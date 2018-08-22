@@ -24,6 +24,7 @@ export class GithabService {
     const promise = new Promise((resolve)=>
     {this.http.get<ApiResponse>("https://api.github.com/users/ras-kwesi?access_token=2e20d9f699505a0f0d26c8591ff727e051f85c03").toPromise().then(response=>{
       this.user.avatar_url = response.avatar_url;
+      console.log(this.user.avatar_url)
       this.user.login =response.login;
       this.user.url =response.url;
       this.user.name = response.name;
