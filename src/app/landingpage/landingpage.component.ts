@@ -12,6 +12,7 @@ import {GithabService} from '../githab/githab.service';
 })
 export class LandingpageComponent implements OnInit {
   githabService: User;
+  
   constructor(public http:HttpClient, public _serviceme: GithabService) {
 
    }
