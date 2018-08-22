@@ -11,10 +11,13 @@ import {GithabService} from '../githab/githab.service';
   providers:[GithabService]
 })
 export class LandingpageComponent implements OnInit {
-  githubService: User;
-  constructor(private http:HttpClient, public _serviceme: User) { }
+  githabService: User;
+  constructor(public http:HttpClient, public _serviceme: GithabService) {
+
+   }
 
   ngOnInit() {
+    this.githabService = this._serviceme();
   }
 
 }

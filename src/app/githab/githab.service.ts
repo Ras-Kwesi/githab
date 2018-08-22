@@ -17,7 +17,7 @@ export class GithabService {
       avatar_url: string,
       login: string,
       url: string,
-      name: string,
+      //name: string,
       following_url: string,
       followers_url: string,
     }
@@ -26,7 +26,7 @@ export class GithabService {
       this.githabService.avatar_url = response.avatar_url;
       this.githabService.login =response.login;
       this.githabService.url =response.url;
-      this.githabService.name = response.name;
+      //this.githabService.name = response.name;
       this.githabService.following_url = response.following_url;
       this.githabService.followers_url = response.followers_url;
       console.log(response);
